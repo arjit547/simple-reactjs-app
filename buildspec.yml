@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - echo "Installing dependencies..."
+      - npm install
+      - npm install -g create-react-app
+  build:
+    commands:
+      - echo "Building react project..."
+      - npm run build
+artifacts:
+  files:
+    - '**/*'
