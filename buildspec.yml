@@ -6,7 +6,6 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - npm install
-      - npm install -g create-react-app
   build:
     commands:
       - echo "Building react project..."
